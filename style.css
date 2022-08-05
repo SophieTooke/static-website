@@ -1,13 +1,19 @@
 :root {
-  --background: #3E0666;
+  --background: ##210833;
   --contrast: #F9F6F0;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  margin: 10px;
+  margin: 20px;
   background-color: var(--background);
+  max-width: 1400px;
+  margin: auto;
+}
+
+header{
+  margin: auto;
 }
 
 h1{
