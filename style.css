@@ -1,8 +1,20 @@
+:root {
+  --background: #3E0666;
+  --contrast: #F9F6F0;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 20px
+  font-size: 20px;
+  margin: 10px;
+  background-color: var(--background);
 }
 
 h1{
   font-size: 2em;
+  font-size: 2em;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--contrast);
 }
