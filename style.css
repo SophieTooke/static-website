@@ -1,29 +1,109 @@
 :root {
-  --background: #210833;
+  --pink: #f653e1;
+  --lightBlue: #65e0ff;
+  --darkBlue: #004683;
   --contrast: #F9F6F0;
+}
+
+html {
+  height: 100%;
+  margin: 0;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  margin: 20px;
-  background-color: var(--background);
+  padding: 20px;
+  height: 80%;
+  background-color: var(--darkBlue);
+  background: linear-gradient(-45deg, var(--pink) 0%, var(--lightBlue) 50%, var(--darkBlue) 100%);
 }
+
+/* Layout and structure */
 
 header{
   margin: auto;
 }
 
+nav{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 800px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  gap: 40px;
+
+}
+
+/* Typography */
+
 h1{
-  font-size: 2em;
   font-size: 2em;
   font-weight: 200;
   letter-spacing: 0.1em;
+  margin: 0;
   text-transform: uppercase;
   color: var(--contrast);
 }
 
-.container {
-  max-width: 1400px;
-  margin: auto;
+a {
+  text-decoration: none;
+  color: var(--darkBlue)
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid white;
+  background: none;
+  color: var(--contrast);
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: background-color 300ms;
+  transition: color 300ms;
+}
+
+button:hover{
+  background-color: white;
+  color: var(--darkBlue);
+  cursor:pointer;
+}
+
+/* Tiles */
+.tile{
+  background-color: var(--contrast);
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 80px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  border-radius: 15px;
+  -webkit-box-shadow: 6px 6px 15px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 6px 6px 15px 0px rgba(0,0,0,0.15);
+  box-shadow: 6px 6px 15px 0px rgba(0,0,0,0.15);
+  transition: transform 300ms;
+}
+.tile:hover{
+  transform: translate(0px, -5px);
+  letter-spacing: 0.4em;
+  -webkit-box-shadow: 8px 8px 15px 0px rgba(0,0,0,0.18);
+  -moz-box-shadow: 8px 8px 15px 0px rgba(0,0,0,0.18);
+  box-shadow: 8px 8px 15px 0px rgba(0,0,0,0.18);
+  cursor: pointer;
+}
+
+.tile.top{
+  flex-grow: 1;
+}
+.tile.bottom{
+  width: 100%;
 }
