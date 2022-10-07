@@ -1,7 +1,8 @@
 :root {
   --pink: #f653e1;
-  --lightBlue: #65e0ff;
-  --darkBlue: #004683;
+  /* --lightBlue: #65e0ff; */
+  --lightBlue: #009ac9;
+  --darkBlue: #003682;
   --contrast: #F9F6F0;
 }
 
@@ -83,7 +84,7 @@ button:hover{
   background-color: var(--contrast);
   text-transform: uppercase;
   font-weight: bold;
-  padding: 80px;
+  padding: 40px;
   letter-spacing: 0.1em;
   text-align: center;
   border-radius: 15px;
