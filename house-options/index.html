@@ -40,7 +40,6 @@
 
   <label for="image-select">Select a colour:</label>
   <select id="image-select">
-    <option value="">-- None selected --</option>
     <option value="house-options/anthracite_grey.png">Anthracite grey</option>
     <option value="house-options/arctic_white.png">Arctic white</option>
     <option value="house-options/boothbay_blue.png">Boothbay blue</option>
@@ -66,7 +65,9 @@
   </div>
 
 
-  <div id="image-container"></div>
+  <div id="image-container">
+    <img src="house-options/anthracite_grey.png" alt="">
+  </div>
 
   <script>
     var imageSelect = document.getElementById("image-select");
