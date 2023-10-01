@@ -107,8 +107,8 @@ function fadeIn(element, duration, callback) {
   var startTime = Date.now();
   var tick = function() {
     var newOpacity = (Date.now() - startTime) / duration;
-    if (newOpacity > 1) {
-      newOpacity = 1;
+    if (newOpacity > 0.6) {
+      newOpacity = 0.6;
       callback && callback();
     } else {
       (window.requestAnimationFrame && requestAnimationFrame(tick)) ||

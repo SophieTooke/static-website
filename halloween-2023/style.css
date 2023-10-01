@@ -26,7 +26,7 @@ html {
 
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 17px;
     font-family: Rajdhani, Arial, Helvetica, sans-serif;
     color: white;
 }
@@ -37,12 +37,26 @@ h1 {
     font-weight: 800;
     font-size: 4em;
     color: white;
+    margin: 0.25em;
+    text-shadow: 0px 0px 5px rgba(7,0,48,1);
 }
 
 h2 {
     font-family: Rajdhani, Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     color: white;
+    margin-bottom: 0;
+    text-shadow: 0px 0px 5px rgba(7,0,48,1);
+}
+
+h3 {
+    font-weight: 400;
+    margin-top: 0;
+    text-shadow: 0px 0px 5px rgba(7,0,48,1);
+}
+
+p{
+    text-shadow: 0px 0px 5px rgba(7,0,48,1);
 }
 
 section {
@@ -79,7 +93,8 @@ section {
     z-index: -9999;
 }
 
-.sticker, #comet-bundle {
+.sticker,
+#comet-bundle {
     z-index: -20;
     position: absolute;
 }
@@ -106,7 +121,7 @@ section {
     left: 5%
 }
 
-#comet-bundle{
+#comet-bundle {
     width: 150px;
     height: 150px;
     position: absolute;
@@ -120,12 +135,12 @@ section {
     height: 185px;
     background-size: contain;
     background-repeat: no-repeat;
-    top: 20%;
+    top: 10%;
     left: 20%;
     transform: rotate(-15deg);
 }
 
-#sticker-planet-01{
+#sticker-planet-01 {
     background-image: url(sticker_planet_01.png);
     width: 190px;
     height: 190px;
@@ -133,12 +148,12 @@ section {
     bottom: 5%
 }
 
-#sticker-tardis{
+#sticker-tardis {
     background-image: url(sticker_tardis.png);
     width: 312px;
     height: 418px;
     right: 10px;
-    top:-10%;
+    top: -10%;
     transform: rotate(20deg) scale(60%);
 }
 
@@ -168,7 +183,7 @@ section {
     box-shadow: 0px -5px 40px -2px var(--lightest-green);
 }
 
-#sticker-rocket{
+#sticker-rocket {
     background-image: url(sticker_rocket_rotated.png);
     background-size: contain;
     width: 197px;
@@ -177,13 +192,13 @@ section {
 
 }
 
-#svg-rocket{
+#svg-rocket {
     width: 80%;
     position: absolute;
     right: -200px
 }
 
-#rocket-path{
+#rocket-path {
     position: absolute;
     width: 60%;
     right: 0;
@@ -195,12 +210,10 @@ section {
     fill: none;
     /* stroke: #fff;
     stroke-miterlimit: 10; */
-  }
+}
 
 #details {
     grid-area: details;
-    justify-content: start;
-
 }
 
 
@@ -220,6 +233,7 @@ form {
 form h2 {
     color: var(--bg-blue);
     font-weight: 600;
+    text-shadow: none;
 }
 
 .question-group {
@@ -269,6 +283,7 @@ form input[type=radio] {
     transition: 300ms;
     text-transform: capitalize;
     font-size: 1.2em;
+    margin: 20px;
 }
 
 .long {
@@ -283,10 +298,10 @@ form input[type=radio] {
 }
 
 @media only screen and (max-width: 600px) {
-    #location{
+    #location {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr;
-        grid-template-areas: 
+        grid-template-areas:
             "world"
             "details";
     }
@@ -301,7 +316,7 @@ form input[type=radio] {
         left: -10%
     }
 
-    #comet-bundle{
+    #comet-bundle {
         width: 120px;
         height: 120px;
         position: absolute;
@@ -309,7 +324,7 @@ form input[type=radio] {
         right: 0
     }
 
-    #svg-rocket{
+    #svg-rocket {
         width: 80%;
         position: absolute;
         right: -60px;
@@ -317,13 +332,13 @@ form input[type=radio] {
         transform: rotate(45deg)
     }
 
-    #sticker-rocket{
+    #sticker-rocket {
         background-image: url(sticker_rocket_rotated.png);
         background-size: contain;
         width: 140px;
         height: 140px;
         z-index: 10;
-    
+
     }
 
     #sticker-ufo {
@@ -337,19 +352,23 @@ form input[type=radio] {
         transform: rotate(-15deg);
     }
 
-    #sticker-tardis{
+    #sticker-tardis {
         background-image: url(sticker_tardis.png);
         right: -15%;
-        top:-25%;
+        top: -25%;
         transform: rotate(20deg) scale(40%);
+    }
+
+    #details {
+        justify-content: start;
     }
 }
 
 @media only screen and (min-width: 1250px) {
-    body{
+    body {
         font-size: 22px;
     }
-    
+
     #world {
         width: 70vw;
         height: 70vw;
