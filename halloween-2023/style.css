@@ -199,6 +199,8 @@ section {
 
 #details {
     grid-area: details;
+    justify-content: start;
+
 }
 
 
