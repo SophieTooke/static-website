@@ -22,6 +22,7 @@ html {
     background-size: 300%;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    overflow-anchor: auto;
 }
 
 body {
@@ -29,6 +30,7 @@ body {
     font-size: 17px;
     font-family: Rajdhani, Arial, Helvetica, sans-serif;
     color: white;
+
 }
 
 
@@ -150,7 +152,7 @@ section {
 
 #sticker-tardis {
     background-image: url(sticker_tardis.png);
-    width: 312px;
+    width: 332px;
     height: 418px;
     right: 10px;
     top: -10%;
@@ -298,6 +300,10 @@ form input[type=radio] {
 }
 
 @media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 3.2em;
+    }
+
     #location {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr;
@@ -367,6 +373,10 @@ form input[type=radio] {
 @media only screen and (min-width: 1250px) {
     body {
         font-size: 22px;
+    }
+
+    h1 {
+        font-size: 4.5em;
     }
 
     #world {
